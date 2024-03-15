@@ -106,3 +106,86 @@ main{
     display: flex;
     flex-direction: row-reverse;
 }
+
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 10px;
+    color: white;
+    border: 1px solid black;
+    background-color: black;
+}
+.navDivs{
+    display: flex;
+    flex-direction: column;
+}
+.navDivs li a{
+    text-decoration: none;
+    color: black;
+    list-style: none;
+}
+.navDivs li{
+    margin-bottom: 20px;
+}
+
+.div2 {
+    position: relative;
+    bottom: 0;
+}
+.div1{
+    text-align: center;
+    border: 1px solid black;
+}
+.div2 li::before{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 8px;
+    color: black;
+}
+nav{
+    display: flex;
+    width: 35%;
+    flex-direction: column;
+    border: 1px solid black;
+}
+
+
+/* Resto de estilos... */
+
+/* Estilos para dispositivos móviles */
+@media only screen and (max-width: 600px) {
+    .encabezado {
+        /* Ajustes para el encabezado en móviles */
+    }
+
+    .bloque, .objeto2 {
+        /* Cambiar la disposición de fila a columna para móviles */
+        flex-direction: column;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .bloque .objeto1, .bloque div {
+        /* Ajustar el ancho de las imágenes y el texto para móviles */
+        width: 100%;
+        padding: 10px; /* o el valor que sea necesario */
+    }
+
+    .box1, .box2, .box3 {
+        /* Ajustes para las cajas en la sección 2 para móviles */
+        width: 100%;
+    }
+
+    .navDivs {
+        /* Cambiar la navegación para que sea más vertical en móviles */
+        flex-direction: row;
+    }
+
+    nav {
+        /* Ajustar la navegación para ocupar el ancho completo en móviles */
+        width: 100%;
+    }
+
+    /* Otros ajustes de estilo que sean necesarios */
+}
