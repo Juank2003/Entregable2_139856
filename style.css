@@ -151,41 +151,32 @@ nav{
 }
 
 
-/* Resto de estilos... */
 
-/* Estilos para dispositivos móviles */
 @media only screen and (max-width: 600px) {
     .encabezado {
-        /* Ajustes para el encabezado en móviles */
     }
 
     .bloque, .objeto2 {
-        /* Cambiar la disposición de fila a columna para móviles */
         flex-direction: column;
         margin-right: 0;
         margin-left: 0;
     }
 
     .bloque .objeto1, .bloque div {
-        /* Ajustar el ancho de las imágenes y el texto para móviles */
         width: 100%;
-        padding: 10px; /* o el valor que sea necesario */
+        padding: 10px;
     }
 
     .box1, .box2, .box3 {
-        /* Ajustes para las cajas en la sección 2 para móviles */
+
         width: 100%;
     }
 
     .navDivs {
-        /* Cambiar la navegación para que sea más vertical en móviles */
         flex-direction: row;
     }
 
     nav {
-        /* Ajustar la navegación para ocupar el ancho completo en móviles */
         width: 100%;
     }
-
-    /* Otros ajustes de estilo que sean necesarios */
 }
